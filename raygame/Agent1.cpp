@@ -17,10 +17,11 @@ void Agent1::onCollision(Actor* actor)
 void Agent1::start()
 {
 	Character::start();
-	SeekBehavior* comp = new SeekBehavior(GameManager::get, 200);
 
-	addComponent(comp);
 	//add steering behaviours here
+
+	//SeekBehavior* comp = new SeekBehavior(GameManager, 200);
+	//addComponent(comp);
 }
 
 void Agent1::update(float deltaTime)
