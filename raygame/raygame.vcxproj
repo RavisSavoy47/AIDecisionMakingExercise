@@ -152,6 +152,7 @@
     <ClCompile Include="Agent.cpp" />
     <ClCompile Include="Agent1.cpp" />
     <ClCompile Include="Agent2.cpp" />
+    <ClCompile Include="AgentOneStateComponent.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="CircleCollider.cpp" />
     <ClCompile Include="Collider.cpp" />
@@ -182,6 +183,7 @@
     <ClInclude Include="Agent.h" />
     <ClInclude Include="Agent1.h" />
     <ClInclude Include="Agent2.h" />
+    <ClInclude Include="AgentOneStateComponent.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="CircleCollider.h" />
     <ClInclude Include="Collider.h" />

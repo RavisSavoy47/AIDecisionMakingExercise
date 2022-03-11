@@ -16,7 +16,7 @@ MathLibrary::Vector2 Agent1::getBallPosition()
 	MathLibrary::Vector2 ballPosition = GameManager::getInstance()->getBallPosition();
 	m_ballPosition->getTransform()->setWorldPostion(ballPosition);
 
-	return ballPosition;
+	return ballPosition; //Returns the ball position
 }
 
 void Agent1::onCollision(Actor* actor)
