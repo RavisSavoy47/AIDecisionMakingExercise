@@ -1,5 +1,6 @@
 #include "Agent1.h"
 #include "SpriteComponent.h"
+#include "SeekBehavior.h"
 #include "Goal.h"
 #include "GameManager.h"
 
@@ -16,6 +17,9 @@ void Agent1::onCollision(Actor* actor)
 void Agent1::start()
 {
 	Character::start();
+	SeekBehavior* comp = new SeekBehavior(GameManager::get, 200);
+
+	addComponent(comp);
 	//add steering behaviours here
 }
 
