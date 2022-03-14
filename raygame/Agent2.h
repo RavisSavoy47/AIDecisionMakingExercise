@@ -1,6 +1,9 @@
 #pragma once
 #include "Character.h"
 
+class BulletRS;
+class ShieldRS;
+class StateMachineRSComponent;
 class Agent2 :
     public Character
 {
@@ -19,10 +22,15 @@ public:
     virtual void update(float deltaTime) override;
     virtual void onDeath();
     virtual void onDamageRecieved() {};
-    //Gets the ball's position, and changes the m_ballPosition actor accordingly
-    MathLibrary::Vector2 getBallPosition();
+
 private:
-    Actor* m_ballPosition;
+    float m_health = 3;
+    StateMachineRSComponent* m_stateMachine;
+    // Takes in a custom madde actor designed to be a bullet 
+    BulletRS* m_bullet;
+    ShieldRS* m_shield;
+    //Meant to keep tabs on the time between bullets made 
+    float m_timer = 0;
 };
 
 

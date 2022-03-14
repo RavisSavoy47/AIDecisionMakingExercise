@@ -3,14 +3,13 @@
 
 enum State
 {
-	SEEKBALL,
-	ATTACK,
-	DEFEND,
-	GOAL,
+    SEEKBALL,
+    ATTACK,
+    DEFEND,
+    GOAL,
 };
 
 class SeekBehavior;
-
 class StateMachineRSComponent :
 	public Component
 {
