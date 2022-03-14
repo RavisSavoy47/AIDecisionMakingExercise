@@ -152,6 +152,7 @@
     <ClCompile Include="Agent.cpp" />
     <ClCompile Include="Agent1.cpp" />
     <ClCompile Include="Agent2.cpp" />
+    <ClCompile Include="BulletRS.cpp" />
     <ClCompile Include="AgentOneStateComponent.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="Character.cpp" />
@@ -170,8 +171,10 @@
     <ClCompile Include="ScoreBoard.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SeekBehavior.cpp" />
+    <ClCompile Include="ShieldRS.cpp" />
     <ClCompile Include="ShootingComponent.cpp" />
     <ClCompile Include="SpriteComponent.cpp" />
+    <ClCompile Include="StateMachineRSComponent.cpp" />
     <ClCompile Include="SteeringComponent.cpp" />
     <ClCompile Include="Transform2D.cpp" />
     <ClCompile Include="UITextComponent.cpp" />
@@ -184,6 +187,7 @@
     <ClInclude Include="Agent.h" />
     <ClInclude Include="Agent1.h" />
     <ClInclude Include="Agent2.h" />
+    <ClInclude Include="BulletRS.h" />
     <ClInclude Include="AgentOneStateComponent.h" />
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="Character.h" />
@@ -201,8 +205,10 @@
     <ClInclude Include="ScoreBoard.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SeekBehavior.h" />
+    <ClInclude Include="ShieldRS.h" />
     <ClInclude Include="ShootingComponent.h" />
     <ClInclude Include="SpriteComponent.h" />
+    <ClInclude Include="StateMachineRSComponent.h" />
     <ClInclude Include="SteeringComponent.h" />
     <ClInclude Include="Transform2D.h" />
     <ClInclude Include="UITextComponent.h" />

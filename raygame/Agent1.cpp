@@ -31,6 +31,9 @@ void Agent1::onCollision(Actor* actor)
 
 void Agent1::start()
 {
+	Character::start();
+<<<<<<<<< Temporary merge branch 1
+	SeekBehavior* comp = new SeekBehavior(GameManager::get, 200);
 
 	Character::start(); //Calls the base character's start function
 	////Creates a new seekBehavior and seeks the ballPosition actor

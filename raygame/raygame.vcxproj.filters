@@ -68,13 +68,22 @@
     <ClCompile Include="FleeBehavior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SeekBehavior.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="WanderBehavior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SeekBehavior.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
     <ClCompile Include="SteeringComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachineRSComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletRS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShieldRS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AgentOneStateComponent.cpp">
@@ -164,6 +173,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="WanderBehavior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachineRSComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletRS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShieldRS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AgentOneStateComponent.h">
