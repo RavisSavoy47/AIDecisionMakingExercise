@@ -4,8 +4,15 @@
 
 void MoveComponent::update(float deltaTime)
 {
-	//Add the new velocity to the old position to get the new position
-	MathLibrary::Vector2 newPosition = getOwner()->getTransform()->getLocalPosition() + getVelocity() * deltaTime;
+	MathLibrary::Vector2 oldPosition = getOwner()->getTransform()->getLocalPosition();
+	//Add the new velocity to the old posiiton to get the new position
+	MathLibrary::Vector2 newPosition = MathLibrary::Vector2((oldPosition.x + (m_velocity.x * deltaTime)),
+		(oldPosition.y + (m_velocity.y * deltaTime)));
+
+
+	if (m_velocity.getMagnitude() > m_maxSpeed) {
+		m_velocity = m_velocity.getNormalized() * m_maxSpeed;
+	}
 
 	//Update facing
 	if (getVelocity().getMagnitude() > 0)

@@ -18,5 +18,10 @@ public:
     virtual void update(float deltaTime) override; //Called every frame
     virtual void onDeath(); //Called when this actor dies
     virtual void onDamageRecieved() {};
+
+private:
+    float m_slowingEnemy;
+    float m_slowTimer;
+    float m_slowDuration;
 };
 
