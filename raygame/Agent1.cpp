@@ -14,9 +14,6 @@ Agent1::Agent1(float x, float y, const char* name, float maxForce, float maxSpee
 void Agent1::onCollision(Actor* actor)
 {
 	Character::onCollision(actor);
-	if (dynamic_cast<Character*>(actor))
-		for (int i = 0; i < 3; i++)
-			takeDamage();
 }
 
 void Agent1::start()

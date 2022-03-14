@@ -6,6 +6,7 @@ class SeekBehavior;
 enum State {
 	SEEKING_BALL,
 	SEEKING_GOAL,
+	SEEKING_ENEMY
 };
 
 class AgentOneStateComponent :

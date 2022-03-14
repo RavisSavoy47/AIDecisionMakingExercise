@@ -3,8 +3,8 @@
 #include "ActorArray.h"
 #include <Vector2.h>
 
-class SteeringComponent;
 class MoveComponent;
+class SteeringComponent;
 
 class Agent :
 	public Actor
