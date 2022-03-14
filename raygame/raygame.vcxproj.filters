@@ -86,14 +86,17 @@
     <ClCompile Include="FleeBehavior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SeekBehavior.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="WanderBehavior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StateMachineRSComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="SeekBehavior.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
     <ClCompile Include="SteeringComponent.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +177,9 @@
     </ClInclude>
     <ClInclude Include="WanderBehavior.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachineRSComponent.h">
+      <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

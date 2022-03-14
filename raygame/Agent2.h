@@ -19,6 +19,10 @@ public:
     virtual void update(float deltaTime) override;
     virtual void onDeath();
     virtual void onDamageRecieved() {};
+    //Gets the ball's position, and changes the m_ballPosition actor accordingly
+    MathLibrary::Vector2 getBallPosition();
+private:
+    Actor* m_ballPosition;
 };
 
 
