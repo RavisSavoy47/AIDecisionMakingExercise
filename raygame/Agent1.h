@@ -13,16 +13,10 @@ public:
     /// <param name="health">The amount of health this character has</param>
     Agent1(float x, float y, const char* name, float maxForce, float maxSpeed, float health);
 
-    //Gets the ball's position, and changes the m_ballPosition actor accordingly
-    MathLibrary::Vector2 getBallPosition(); 
-
     virtual void onCollision(Actor* actor) override; //Called on collision with another actor
     virtual void start() override; //Called when this actor is added to a scene
     virtual void update(float deltaTime) override; //Called every frame
     virtual void onDeath(); //Called when this actor dies
     virtual void onDamageRecieved() {};
-
-private:
-    Actor* m_ballPosition; //Actor that shares the position of the ball
 };
 
