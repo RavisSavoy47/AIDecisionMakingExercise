@@ -5,6 +5,7 @@
 #include "GameManager.h"
 #include "Transform2D.h"
 #include "AgentOneStateComponent.h"
+#include "ShootingComponent.h"
 
 Agent1::Agent1(float x, float y, const char* name, float maxForce, float maxSpeed, float health) : Character(x, y, name, maxForce, maxSpeed, health)
 {
@@ -28,11 +29,13 @@ void Agent1::start()
 	//Component that handles the agent's game states
 	AgentOneStateComponent* stateComponent = new AgentOneStateComponent();
 	addComponent(stateComponent);
+	
+	ShootingComponent* shootingComponent = new ShootingComponent(GameManager::getInstance()->getAgent2(), 1);
+	addComponent(shootingComponent);
 }
 
 void Agent1::update(float deltaTime)
 {
-
 	Character::update(deltaTime);
 }
 
