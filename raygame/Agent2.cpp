@@ -16,11 +16,17 @@ void Agent2::onCollision(Actor* actor)
 
 void Agent2::start()
 {
+	////Creates a new seekBehavior and seeks the ballPosition actor
+	SeekBehavior* seekBehavior = new SeekBehavior(GameManager::getInstance()->getLeftGoal(), 200);
+	addComponent(seekBehavior);
+	onAddComponent(seekBehavior);
+
 	Character::start();
 }
 
 void Agent2::update(float deltaTime)
 {
+
 	Character::update(deltaTime);
 
 }
