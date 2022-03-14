@@ -1,28 +1,23 @@
 #pragma once
 #include "Component.h"
 #include <Vector2.h>
-class Actor;
-class Agent;
+#include "Agent.h"
 
 class SteeringComponent :
-	public Component
-{
+	public Component {
 public:
-	SteeringComponent() { m_target = nullptr; m_steeringForce = 0; };
-	SteeringComponent(Actor* actor, float steeringForce) { m_target = actor; m_steeringForce = steeringForce; }
+	SteeringComponent(); //Assigns default values to variables
+	SteeringComponent(Actor* target); //Assigns a target to the m_target variable
 
-	virtual MathLibrary::Vector2 calculateForce() = 0;
-
-	float getSteeringForce() { return m_steeringForce; }
-	void setSteeringForce(float steeringForce) { m_steeringForce = steeringForce; }
-
-	Actor* getTarget() { return m_target; }
-	void setTarget(Actor* target) { m_target = target; }
-
+	Actor* getTarget() { return m_target; } //Returns the current target
+	void setTarget(Actor* target) { m_target = target; } //Changes the target to the one given
 	Agent* getAgent() { return (Agent*)getOwner(); }
 
+	//Calculates the force that will be applied to the actor and returns it
+	virtual MathLibrary::Vector2 calculateForce(float deltaTime) abstract;
+
 private:
-	float m_steeringForce = 0;
-	Actor* m_target = nullptr;
+	MathLibrary::Vector2 m_force = { 0, 0 }; //The force that will be applied to the player
+	Actor* m_target = nullptr; //The actor this component will target
 };
 

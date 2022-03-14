@@ -1,5 +1,6 @@
 #include "Agent2.h"
 #include "SpriteComponent.h"
+#include "SeekBehavior.h"
 #include "GameManager.h"
 #include "Goal.h"
 
@@ -15,8 +16,7 @@ void Agent2::onCollision(Actor* actor)
 
 void Agent2::start()
 {
-	Character::start(); 
-	//add steering behaviours here
+	Character::start();
 }
 
 void Agent2::update(float deltaTime)

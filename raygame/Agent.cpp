@@ -15,7 +15,7 @@ void Agent::update(float deltaTime)
 	//Get all force being applied from steering behaviours
 	for (int i = 0; i < m_steeringComponents.getLength(); i++)
 	{
-		m_force = m_force + m_steeringComponents[i]->calculateForce();
+		m_force = m_force + m_steeringComponents[i]->calculateForce(deltaTime);
 	}
 
 	//Clamp force if it exceeds the maximum scale

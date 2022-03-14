@@ -4,6 +4,7 @@
 #include "Transform2D.h"
 #include "Player.h"
 #include "Agent.h"
+#include "SeekBehavior.h"
 #include "Agent1.h"
 #include "Agent2.h"
 #include "CircleCollider.h"
