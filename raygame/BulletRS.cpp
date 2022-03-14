@@ -55,7 +55,7 @@ void BulletRS::onCollision(Actor* actor)
 {
 	if (getName() == "Agent1")
 	{
-		GameManager::getInstance()->getAgent1()->getHealth()-1;
+		GameManager::getInstance()->getAgent1()->takeDamage();
 		//destroy this actor
 		Engine::destroy(this);
 	}
