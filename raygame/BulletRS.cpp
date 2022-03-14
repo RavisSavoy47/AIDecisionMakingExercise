@@ -34,14 +34,15 @@ void BulletRS::start()
 	/// <summary>
 	/// Sets the the movement
 	/// </summary>
-	MathLibrary::Vector2 moveDirection = (GameManager::getInstance()->getAgent1()->getTransform()->getWorldPosition() -  m_owner->getTransform()->getWorldPosition()).getNormalized();
-	m_moveComp->setVelocity(moveDirection * m_maxSpeed);
+	
 
 
 }
 
 void BulletRS::update(float deltaTime)
 {
+	MathLibrary::Vector2 moveDirection = (GameManager::getInstance()->getAgent1()->getTransform()->getWorldPosition() - m_owner->getTransform()->getWorldPosition()).getNormalized();
+	m_moveComp->setVelocity(moveDirection * m_maxSpeed);
 	Actor::update(deltaTime);
 	/// <summary>
 	/// destorys the bullet after a certain time
@@ -53,7 +54,7 @@ void BulletRS::update(float deltaTime)
 
 void BulletRS::onCollision(Actor* actor)
 {
-	if (getName() == "Agent1")
+	if (actor->getName() == "Agent1")
 	{
 		GameManager::getInstance()->getAgent1()->takeDamage();
 		//destroy this actor
